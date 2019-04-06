@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <title>Log in</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+body{
+    background: #95a5a6;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background: #ecf0f1;
+    border-radius: 2px 2px 2px;
+}
+.img-thumbnail
+    {
+        margin: 10px 200px;
+    }
+.blog{
+    margin: 0px 150px;
+    color: #2c3e50;
+}
+.create{
+    font-family: monospace;
+    display: block;
+    text-decoration: none;
+    color: #2c3e50;
+    cursor: pointer;
+    
+}
+.forget{
+     font-family: monospace;
+    display: block;
+    text-decoration: none;
+    color: #2c3e50;
+    cursor: pointer;
+    
+}
+    
+</style>
+<div class="container">
+  <h2 class="blog">Blog page</h2>
+    <img src="user.jpg" class="img-thumbnail" alt="Cinque Terre" width="50px" height="50px">
+    {% if messege %}
+    <h4>{{messege}}</h4>
+    {% endif %}
+  <form action="" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button><br><br>
+      <a href="forget.html" class="forget">Forgate My Password..!</a><br>
+    <a href="create.html" class="create">Create account</a>
+  </form>
+</div>
+
+</body>
+</html>

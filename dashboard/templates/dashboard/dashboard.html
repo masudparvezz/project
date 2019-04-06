@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<head>
+<title></title>
+<link rel="stylesheet" href="{% static 'dashboard/css/dashboard.css' %}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2 class="blog">Blog</h2>
+       <form class="example" action="">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+        <a href="{% url 'login' %}" class="log">log in</a>     
+        <a herf="" class="create">create categorey</a>
+
+    </div>
+    
+</body>
+
+
+</html>
