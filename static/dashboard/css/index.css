@@ -1,0 +1,36 @@
+body{
+    background: #7f8c8d;
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    background: #34495e;
+}
+.blog{
+        float: left;
+        margin: 25px 30px;
+        color: #ecf0f1;
+        font-family: monospace,sans-serif;
+    }
+.log{
+    float: left;
+    text-decoration: none;
+    display: block;
+    margin: 30px 200px;
+    color: #ecf0f1;
+    font-family: monospace,sans-serif;
+    font-size: 20px;
+}
+.wrapper{
+    background: #0abde3;
+    width: 500px;
+    height: 500px;
+    margin: 0px 350px;
+    }
+.foter{
+    height: 100px;
+    width: 100%;
+    background: #34495e;
+}
