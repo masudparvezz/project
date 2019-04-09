@@ -13,3 +13,6 @@ def itemadd(request):
 
 def showallpost(request):
     return HttpResponse("there is show all post")
+
+def setting(request):
+     return HttpResponse("i am setting")
