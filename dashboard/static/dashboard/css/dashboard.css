@@ -40,13 +40,10 @@ body
     margin: 0px 500px;
 
 }
-.create
+.sidbar
 {
-    font-family: sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    display: block;
-    color: #ecf0f1;
-    margin: 0px 500px;
-
+width: 80px;
+height: 1000px;
+background:#ccc;
+float: left;
 }

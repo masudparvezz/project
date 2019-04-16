@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'blog_panel',
-    'dashboard'
+    'dashboard',
 
 ]
 
@@ -126,4 +126,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+LOGIN_URL='/dashboard/login'
+LOGIN_REDIRECT_URL='/dashboard'
